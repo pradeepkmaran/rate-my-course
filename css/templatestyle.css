@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    /* outline: 1px solid black; */
 }
 
 body{
@@ -135,7 +136,7 @@ section nav a:hover{
     color:#333;
 }
 
-/* ---------------body------------- */
+/* ---------------body--------------- */
 
 main{
     height: 100vh;
@@ -144,152 +145,40 @@ main{
 
 
 
-/* ----------end of body----------- */
+/* -----------end of body------------- */
 
 
-/* -----------footer------------------- */
+/* -------------footer---------------- */
+/* ---------dont disturb footer--------*/
+/* -----responsive - but not size----- */
 
 footer{
     position: absolute;
-    bottom: -40vh;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 1px solid #000000;
-}
-
-body{
-    font-family: 'Poppins';
-    background: linear-gradient(135deg,#009DF6,#252A6F);
+    height: 20%;
     width: 100%;
-    height: 100%;
 }
 
-.headerNavLinksBar{
-    column-count: 2;
-    column-gap: normal;
-    position: relative;
+.footerContainer{
+    text-align: center;
 }
 
-.nowrap{
-    white-space: nowrap;
+.footerTitle a{
+    color: #14163a;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
 }
 
-.headerSearchBarBox{
-    width: 45px;
-    height: 45px;
-    background-color: transparent;
-    transition: 0.2s;
-}
-
-.headerSearchBarBox:hover{
-    width: 250px;
-    background-color: white;
-    border-radius: 50px;
-}
-
-.headerSearchBar{
-    width: 45px;
-    height: 45px;
-    border: none;
+.footerLinks a{
     color: white;
-    background-color: transparent;
-    padding-left: 50px;
+    text-decoration: none;
 }
 
-.headerSearchBar:hover{
-    width: 250px;
-    background-color: white;
-    border-radius: 50px;
-    color: #333;
+.footerLinks a:hover{
+    color: #222;
 }
 
-.headerSearchBar:active{
-    border: none;
-}
-
-.headerSearchBar:focus{
-    outline: none;
-}
-
-.icon{
-    height: 35px;
-    width: 35px;
-    border-radius: 50px;
-    background-color: white;
-    position: relative;
-    top: -40px;
-}
-
-.fa{
-    color:#333;
-    position: relative;
-    left: 9px;
-    top:4px;
-}
-
-.siteNameUni{
-    display: none;
-}
-
-.loginButton, .signupButton{
-    position: absolute;
-    right: 20px;
-    margin: 10px;
-    color: whitesmoke;
-    background-color: transparent;
-    border: none;
-    font-family: "Poppins";
-}
-
-.loginButton{
-    position: absolute;
-    right: 80px ;
-}
-
-@media only screen and (min-width: 600px) {
-    .siteNameUni, header nav{
-        display:unset;
-    }
-
-    .loginButton, .signupButton{
-        font-size: large;
-    }
-
-    .loginButton{
-        right: 100px;
-    }
-}
-
-main{
-    min-height: 100vh;
-} */
+/* -----------end of footer------------ */

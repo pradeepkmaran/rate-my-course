@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA  -Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./css/templatestyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/responsivestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
     <title>Student Course Review System</title>
 </head>
@@ -33,16 +33,49 @@
               </label>
             </div>
           </div>
-        <!-- end of SearchBar -->       
+        <!-- end of SearchBar -->    
+           
+        <input class = "loginButton" id="loginbutton" type="button"  value="Login">
+        <input class = "signupButton" id="signupbutton" type="button" value="Signup">
         
-        <input class = "loginButton" type="button"  value="Login">
-        <input class = "signupButton" type="button" value="Signup">
+        
     <!-- When logged in -->
         <!-- <input type="button" value="Account"> -->
     <!-- When logged in -->
 
     </header>    
+    <div class="logincontainer">
+        <div class="logincontent">
+            <label>
+                <i class="fa-solid fa-xmark loginclose"></i>
+            </label>
+            
+            <h2>LOGIN</h2>
+            <input id="loginusername" type="text" placeholder="Username">
+            <input id="loginpw" type="password" placeholder="password">
+            <input id="loginpageloginbtn" type="button" value="Login">
+            <br><br><br>New to RateMyCourse? <a href="#" id="loginpagesignuplink">Signup</a>
+            
+        </div>
+    </div>
 
+    <div class="signupcontainer">
+        <div class="signupcontent">
+            <label>
+                <i class="fa-solid fa-xmark signupclose"></i>
+            </label>
+
+            <h2>SIGNUP</h2>
+            <input type="text" id="signupusername" placeholder="Username"> 
+            <input type="email" id="signupemail" placeholder="E-Mail">
+            <input type="password" id="signuppw" placeholder="Password">
+            <input type="password" id="signupconfirm" placeholder="Confirm Password">
+
+            <input id="signuppagesignupbtn" type="button" value="Signup">
+            <br><br> Existing User?  <a href="#" id="signuppageloginlink">Login</a>
+
+        </div>
+    </div>
    
     <main>
         <br>
@@ -64,5 +97,7 @@
             </div>
         </div>    
     </footer>
+
+    <script src="./js/templatejs.js"></script>
 </body>
 </html>

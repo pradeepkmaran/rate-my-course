@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    /* outline: 1px solid black; */
+}
+
+body{
+    height: 140vh;
+    width: 100%;
+    background-image: linear-gradient(135deg, #009DF6,#252A6F);
+}
+
+
+/* ---------------header--------------- */
+header{
+    display: block;
+    align-items: center;
+    width: 100%;  
+    margin-top: 20px; 
+}
+
+.pageName{
+    display: flex;
+    color: #252A6F;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+}
+
+header section nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+section nav a{
+    color: white;
+    text-decoration: none;
+}
+
+section nav a:hover{
+    color: #333;
+    text-decoration: none;
+}
+
+header input:hover{
+    cursor: pointer;
+}
+/* -----------end of header------------- */
+
+
+/* ----------search bar------------- */
+/* ----------dont disturb----------- */
+.box{
+    max-width: 400px;
+    width: 100%;
+}
+
+.box .search-box{
+    position: relative;
+    height: 50px; /* 50px */
+    max-width: 50px;
+    margin: 1.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+#check:checked ~ .search-box{
+    max-width: 380px;
+}
+
+.search-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 18px;
+}
+
+.search-box .icon{
+    position: absolute;
+    right: -5px;
+    top: 0 ;
+    width: 50px;
+    background: #FFF;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #009DF6;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+#check:checked ~ .search-box .icon{
+    background: #009DF6;
+    color: #FFF;
+    width: 55px;
+    border-radius: 0 25px 25px 0;
+}
+
+#check{
+    display: none;
+}
+
+/* -----------end of searchbar------------- */
+
+
+.loginButton{
+    position: absolute;
+    right: 100px;
+    background-color: transparent;
+    border: none;
+    color:white;
+    font-size: medium;
+}
+
+.signupButton{
+    position: absolute;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+    color:white;
+    font-size: medium;
+}
+
+.loginButton:hover, .signupButton:hover{
+    color:#333;
+}
+/* ------------responsive------------ */
+@media only screen and (min-width:600px) {
+    header{
+        display: inline-flex;
+        align-items: center;
+        width: 100%;   
+        margin-top: -10px;
+    }
+
+    .pageName{
+        display: unset ;
+        color: #252A6F;
+        font-size: 40px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        text-decoration: none;
+        margin-right: 1em;
+    }
+    header section nav{
+        display: unset;
+        align-items: center;
+        gap:2em;
+    }
+    
+    section nav a{
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+    
+    section nav a:hover{
+        color: #333;
+        text-decoration: none;
+    }
+    
+    /* -----------end of header------------- */
+    
+    
+    /* ----------search bar------------- */
+    /* ----------dont disturb----------- */
+    .box{
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .box .search-box{
+        position: relative;
+        height: 50px; /* 50px */
+        max-width: 50px;
+        margin: 1.5rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        transition: all 0.3s ease;
+    }
+    
+    #check:checked ~ .search-box{
+        max-width:20vw;
+    }
+    
+    .search-box input{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+        background: #fff;
+        outline: none;
+        border: none;
+        padding-left: 20px;
+        padding-right: 40px;
+        font-size: 18px;
+    }
+    
+    .search-box .icon{
+        position: absolute;
+        right: -5px;
+        top: 0 ;
+        width: 50px;
+        background: #FFF;
+        height: 100%;
+        text-align: center;
+        line-height: 50px;
+        color: #009DF6;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+    
+    #check:checked ~ .search-box .icon{
+        background: #009DF6;
+        color: #FFF;
+        width: 55px;
+        border-radius: 0 25px 25px 0;
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    /* -----------end of searchbar------------- */
+    
+    
+    .loginButton{
+        position: absolute;
+        right: 100px;
+        background-color: transparent;
+        border: none;
+        color:white;
+        font-size: medium;
+    }
+    
+    .signupButton{
+        position: absolute;
+        right: 30px;
+        background-color: transparent;
+        border: none;
+        color:white;
+        font-size: medium;
+    }
+    
+    .loginButton:hover, .signupButton:hover{
+        color:#333;
+    }
+    
+}
+
+/* --------------signin ------------- */
+.logincontainer{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.548);
+    position: absolute;
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+
+.logincontent{
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: small;
+    position: relative;
+}
+
+.logincontent h2{
+    margin-top: 10%;
+}
+
+.logincontent #loginusername, .logincontent #loginpw{
+    display: block;
+    width: 250px;
+    margin:15px auto;
+    padding: 5px 10px;
+}
+
+.logincontent #loginusername:focus, .logincontent #loginpw:focus{
+    outline:none;
+}
+
+#loginpageloginbtn{
+    background-color: #827DD6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+}
+
+#loginpageloginbtn:hover{
+    cursor: pointer;
+}
+
+
+/* --------------end of signin ------------- */
+
+/* --------------signup------------- */
+
+.signupcontainer{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.548);
+    position: absolute;
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupcontent{
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: small;
+    position:relative;
+}
+
+.fa-xmark{
+    position: absolute;
+    top:10px;
+    right:15px;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.signupcontent h2{
+    margin-top: 5%;
+}
+
+#signupusername, #signupemail, #signuppw, #signupconfirm{
+    display: block;
+    width: 250px;
+    margin:5px auto;
+    padding: 5px 10px;
+}
+
+#signupusername:focus, #signupemail:focus, #signuppw:focus, #signupconfirm:focus{
+    outline:none;
+}
+
+#signuppagesignupbtn{
+    background-color: #827DD6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+}
+
+#signuppagesignupbtn:hover{
+    cursor: pointer;
+}
+
+/* ---------------body--------------- */
+
+main{
+    height: 100vh;
+}
+
+
+
+
+/* -----------end of body------------- */
+
+
+/* -------------footer---------------- */
+/* ---------dont disturb footer--------*/
+/* -----responsive - but not size----- */
+
+footer{
+    position: absolute;
+    height: 20%;
+    width: 100%;
+}
+
+.footerContainer{
+    text-align: center;
+}
+
+.footerTitle a{
+    color: #14163a;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.footerLinks a{
+    color: white;
+    text-decoration: none;
+}
+
+.footerLinks a:hover{
+    color: #222;
+}
+
+/* -----------end of footer------------ */

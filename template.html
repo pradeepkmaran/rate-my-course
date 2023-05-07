@@ -28,7 +28,7 @@
             <input type="checkbox" id="check">
             <div class="search-box">
               <input type="text" placeholder="Type here...">
-              <label for="check" class="icon">
+              <label for="check" class="icon" >
                 <i class="fa fa-search"></i>
               </label>
             </div>
@@ -51,10 +51,13 @@
             </label>
             
             <h2>LOGIN</h2>
-            <input id="loginusername" type="text" placeholder="Username">
-            <input id="loginpw" type="password" placeholder="password">
-            <input id="loginpageloginbtn" type="button" value="Login">
-            <br><br><br>New to RateMyCourse? <a href="#" id="loginpagesignuplink">Signup</a>
+            <form action="get" class="loginform">
+                <input id="loginusername" type="text" placeholder="Username" required>
+                <input id="loginpw" type="password" placeholder="password" required>
+                <input id="loginpageloginbtn" type="submit" value="Login">
+                <br><br><br>New to RateMyCourse? <a href="#" id="loginpagesignuplink">Signup</a>
+            </form>
+            
             
         </div>
     </div>
@@ -66,12 +69,15 @@
             </label>
 
             <h2>SIGNUP</h2>
-            <input type="text" id="signupusername" placeholder="Username"> 
-            <input type="email" id="signupemail" placeholder="E-Mail">
-            <input type="password" id="signuppw" placeholder="Password">
-            <input type="password" id="signupconfirm" placeholder="Confirm Password">
+            <form action="get" class="loginform">
+                <input type="text" id="signupusername" placeholder="Username" required> 
+                <input type="email" id="signupemail" placeholder="E-Mail" required>
+                <input type="password" id="signuppw" placeholder="Password" required>
+                <input type="password" id="signupconfirm" placeholder="Confirm Password" required>
 
-            <input id="signuppagesignupbtn" type="button" value="Signup">
+                <input id="signuppagesignupbtn" type="submit" value="Signup">
+            </form>
+            
             <br><br> Existing User?  <a href="#" id="signuppageloginlink">Login</a>
 
         </div>

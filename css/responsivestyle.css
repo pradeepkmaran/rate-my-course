@@ -299,7 +299,7 @@ header input:hover{
     padding: 5px 10px;
 }
 
-.logincontent #loginusername:focus, .logincontent #loginpw:focus{
+.loginform #loginusername:focus, .logincontent #loginpw:focus{
     outline:none;
 }
 
